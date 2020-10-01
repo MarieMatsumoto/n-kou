@@ -1,0 +1,1071 @@
+@charset "utf-8";
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    letter-spacing: 0.08em;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+p {
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.read-more {
+    display: block;
+}
+.read-more:hover {
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+.container {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+section {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.background-gray {
+    background-color: #F7F7F7;
+}
+
+article {
+    padding: 80px 0;
+}
+
+main {
+    padding-bottom: 80px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* ヘッダー */
+header {
+    position: relative;
+    z-index: 200;
+    background-color: white;
+}
+
+/* ヘッダー　背景グレーの部分 */
+.header-top {
+    background-color: #F7F7F7;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 0.01em;
+}
+
+.headeraside-list a {
+    color: #676767;
+}
+
+.student-login {
+    color: #1F2970;
+}
+
+.header-top a:hover {
+    text-decoration: underline;
+}
+
+.header-aside {
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+
+.header-aside p:first-child {
+    margin-right: auto;
+    color: #272727;
+}
+
+.headeraside-list li {
+    display: inline;
+    padding-right: 5px;
+}
+
+.headeraside-list li::before {
+    content: "|";
+    display: inline-block;
+    margin-right: 7px;
+}
+
+.headeraside-list li:first-child::before {
+    content: none;
+}
+
+.student-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #D9D9D9;
+    height: 100%;
+    width: 130px;
+}
+
+.student-login img {
+    margin-right: 2px;
+}
+
+
+/* ヘッダー真ん中部分 */
+.header-middle {
+    padding: 0 10px;
+}
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 22px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+.header-right div {
+    text-align: center;
+}
+
+.snsbox-header {
+    margin-left: 30px;
+}
+.snsbox-header a {
+    margin-left: 5px;
+}
+.snsbox-header a:hover {
+    opacity: 0.6;
+}
+.contact-sub {
+    margin-top: 5px;
+    font-size: 10px;
+    color: #8C969C;
+}
+
+/* ヘッダー真ん中　下部分 */
+.about-list {
+    display: flex;
+    align-items: flex-start;
+}
+
+.about-list li {
+    display: flex;
+    border-right: 1px solid #DCDDDD;
+    height: 30px;
+    font-size: 16px;
+    position: relative;
+}
+.about-list li:first-child {
+    border-left: 1px solid #DCDDDD;
+    padding: 0 30px;
+}
+.about-list a {
+    display: block;
+    font-weight: bold;
+    padding: 0 30px;
+}
+.about-list a:hover {
+    text-decoration: none;
+    color: #1F2970;
+}
+
+.al-about {
+    height: 30px;
+    position: relative;
+}
+.al-about::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 65%;
+    left: 0;
+    background: url(https://nnn.ed.jp/assets/img/global_nav_btn01_01.png) no-repeat top -100% left 50%;
+}
+.al-netcourse {
+    position: relative;
+}
+.al-netcourse a::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url(https://nnn.ed.jp/assets/img/global_nav_btn01_02.png) no-repeat top 200% left 50%;
+}
+.al-netcourse a:hover::after {
+    background: url(https://nnn.ed.jp/assets/img/global_nav_btn01_02.png) no-repeat top -100% left 50%;
+    top: 65%;
+}
+.al-commute {
+    position: relative;
+}
+.al-commute a::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url(https://nnn.ed.jp/assets/img/global_nav_btn01_03.png) no-repeat top 200% left 50%;
+}
+.al-commute a:hover::after {
+    background: url(https://nnn.ed.jp/assets/img/global_nav_btn01_03.png) no-repeat top -100% left 50%;
+    top: 65%;
+}
+.al-school {
+    position: relative;
+}
+.al-school a::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url(https://nnn.ed.jp/assets/img/global_nav_btn01_04.png) no-repeat top 200% left 50%;
+}
+.al-school a:hover::after {
+    background: url(https://nnn.ed.jp/assets/img/global_nav_btn01_04.png) no-repeat top -100% left 50%;
+    top: 65%;
+}
+
+
+.header-contact {
+    display: flex;
+}
+
+.header-contact li {
+    border: 1px solid black;
+    margin-left: 10px;
+}
+
+.header-contact a {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 0;
+    text-align: center;
+    width: 170px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.header-contact a:hover {
+    text-decoration: none;
+    background: #1F2970;
+    color: white;
+}
+.header-contact a::after {
+    position: absolute;
+    content: "";
+    width: 9px;
+    height: 9px;
+    background: url(https://nnn.ed.jp/assets/img/icon_arrow01_right_blue01.png) no-repeat;
+    background-size: contain;
+    right: 10px;
+}
+.header-contact a:hover::after {
+    position: absolute;
+    background: url(https://nnn.ed.jp/assets/img/icon_arrow01_right_white01.png) no-repeat;
+    background-size: contain;
+    right: 10px;
+}
+
+/* 途中で降りてくるヘッダー部分 */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.f-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 10px;
+}
+.tel-img p {
+    margin-left: 10px;
+    padding-top: 3px;
+}
+.tel-img img {
+    padding-top: 8px;
+}
+
+/* ナビゲーション */
+nav {
+    background-color: #181936;
+    margin-top: 20px;
+    position: relative;
+}
+nav a:hover {
+    text-decoration: none;
+}
+nav div::before {
+    content: "";
+    position: absolute;
+    top: -22px;
+    left: 10%;
+    margin-left: -15px;
+    border: 15px solid transparent;
+    border-bottom: 20px solid #181936;
+}
+.nav-list {
+    height: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.nav-list a {
+    color: white;
+    display: block;
+    padding: 10px 15px 10px 0;
+    font-size: 14px;
+}
+
+.nav-list a:hover {
+    background-color: white;
+    color: #181936;
+}
+
+.nav-list li {
+    display: inline;
+    padding-left: 30px;
+    background: url("https://nnn.ed.jp/assets/img/icon_backslash01_black01.png") no-repeat left 0 top 10px;
+}
+
+.nav-list li:first-child {
+    padding-left: 0;
+    background: none;
+}
+
+/* キービジュアル */
+
+.key-visual {
+    background: url(https://nnn.ed.jp/about/img/about_mainimage01.jpg) no-repeat;
+    background-size: cover;
+    background-position: left 0% bottom 50%;
+    height: 530px;
+    width: 100%;
+    position: relative;
+}
+.key-visual div {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.key-visual h1 {
+    color: white;
+    font-size: 50px;
+    letter-spacing: 0.2em;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.key-visual h1::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -25px;
+    /*下線の上下位置調整*/
+    display: inline-block;
+    width: 200px;
+    /*下線の幅*/
+    height: 1px;
+    /*下線の太さ*/
+    transform: translate(-50%);
+    /*位置調整*/
+    background-color: white;
+    /*下線の色*/
+}
+.key-visual img {
+    width: 90px;
+}
+
+/* キービジュアル下パンくずリスト的なところ */
+.bread-box a {
+    color: #4C669A;
+}
+.bread-list {
+    display: flex;
+    align-content: center;
+    /* 効かない？ */
+    position: relative;
+}
+.bread-list li {
+    margin: 20px 0;
+    margin-right: 10px;
+    font-size: 14px;
+    color: #727272;
+    margin-right: 20px;
+}
+.bread-list li::after {
+    content: ">";
+    position: absolute;
+    top: 37%;
+    left: 280px;
+}
+.bread-list li:last-child::after {
+    content: none;
+}
+
+/* メイン部分 */
+article,
+aside {
+    border-top: 1px solid #E2E2E2;
+}
+
+.main-h2 {
+    font-size: 35px;
+    margin: 80px 0;
+    text-align: center;
+    font-weight: 100;
+    line-height: 3rem;
+}
+
+.theme-p {
+    font-size: 22px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    line-height: 2rem;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.theme-p::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -15px;
+    /*下線の上下位置調整*/
+    display: inline-block;
+    width: 200px;
+    /*下線の幅*/
+    height: 1px;
+    /*下線の太さ*/
+    transform: translate(-50%);
+    /*位置調整*/
+    background-color: #666666;
+    /*下線の色*/
+}
+
+.theme-box {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.text-p {
+    font-size: 16px;
+    line-height: 1.4em;
+    text-align: justify;
+    color: black;
+}
+.sub-p {
+    font-size: 12px;
+    line-height: 1.2rem;
+    color: black;
+}
+.n-about {
+    padding-bottom: 20px;
+    font-size: 25px;
+    background: url(https://nnn.ed.jp/assets/img/line02_black01.png) no-repeat left 0 top 40px;
+    margin-bottom: 30px;
+}
+
+.edu-list li {
+    display: flex;
+    margin-bottom: 30px;
+    position: relative;
+    align-items: center;
+    font-size: 19px;
+}
+
+
+.about-strong {
+    text-align-last: justify;
+    width: 80px;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px 10px 10px 0;
+    margin-right: 10px;
+    border-right: 1px solid black;
+}
+
+.topic-box {
+    width: 620px;
+    border: 1px solid #DDDDDD;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: #F7F7F7;
+}
+
+.topic-text {
+    margin-left: 30px;
+}
+
+.topic-p {
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.flex-container-topic {
+    display: flex;
+}
+
+.image-readmore {
+    margin-top: 20px;
+    position: relative;
+    padding-left: 20px;
+}
+.image-readmore img {
+    width: 70px;
+}
+.image-readmore::before {
+    content: "";
+    width: 5px;
+    height: 10px;
+    background: url(https://nnn.ed.jp/assets/img/icon_arrow01_right_black01.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 7px;
+    top: 4px;
+}
+
+
+.tryangle-img {
+    height: 280px;
+    width: 330px;
+    object-fit: cover;
+}
+
+.edu-h4 {
+    font-size: 26px;
+    line-height: 2rem;
+}
+
+.edu-p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: black;
+    line-height: 1.6rem;
+}
+
+.charm-intro {
+    border-top: 1px solid black;
+    margin-top: 30px;
+    padding-top: 20px;
+    width: 500px;
+}
+
+.plan-h3 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.plan-h3::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -25px;
+    /*下線の上下位置調整*/
+    display: inline-block;
+    width: 200px;
+    /*下線の幅*/
+    height: 1px;
+    /*下線の太さ*/
+    transform: translate(-50%);
+    /*位置調整*/
+    background-color: #666666;
+    /*下線の色*/
+}
+
+.plan-p {
+    text-align: center;
+}
+
+.course-intro {
+    width: 25%;
+}
+
+.basic-p {
+    border: 1px solid black;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    width: 120px;
+    background-color: black;
+    padding: 8px 5px;
+    text-align: center;
+}
+
+.advanced-p {
+    border: 1px solid black;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    width: 160px;
+    background-color: black;
+    padding: 8px 5px;
+    text-align: center;
+}
+
+.plan-h4 {
+    margin: 20px 0;
+    line-height: 2rem;
+    font-size: 20px;
+    color: black;
+}
+.basiccourse-p {
+    margin: 10px 0;
+}
+
+.article-final {
+    margin-bottom: 130px;
+}
+
+/* 5分でわかる */
+.five-min img {
+    width: 1040px;
+}
+
+/* 5分でわかるの下 */
+.aside-top {
+    margin: 0 auto;
+    padding: 50px 0 75px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.aside-top div {
+    width: 46%;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    background: url(https://nnn.ed.jp/assets/img/bg_diagonal01_black01.png);
+    padding: 8px;
+}
+.aside-top a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    background: white;
+    padding: 15px 60px 15px 20px;
+    height: 100%;
+    position: relative;
+}
+.aside-top a:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+.aside-top a::after {
+    content: "";
+    width: 5px;
+    height: 10px;
+    background: url(https://nnn.ed.jp/assets/img/icon_arrow01_right_black01.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+}
+.asidetop-p {
+    font-size: 24px;
+    line-height: 2rem;
+    color: black;
+}
+.choice-p {
+        margin-top: 15px;
+}
+
+/* 背景黒いところ */
+.aside-middle1 {
+    background: url(https://nnn.ed.jp/assets/img/footer02_bg01.png);
+    text-align: center;
+    margin: 80px 0 0 0;
+    height: 210px;
+    padding-top: 40px;
+}
+.aside-middle1 a, .aside-middle2 a {
+    font-weight: bold;
+}
+.am1-p {
+    font-size: 22px;
+    font-weight: bold; 
+    margin-bottom: 20px;
+    color: white;
+}
+
+.am-flexcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 130px;
+    width: 550px;
+    margin: 0px auto;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: flex-end;
+}
+
+.am-flexcontainer div {
+    margin-top: 10px;
+}
+.fb-line {
+    height: 50px;
+    width: 42%;
+    color: black;
+    text-align: center;
+    background-color: white;    
+    display: flex;
+    padding-left: 20px;
+}
+.fb-line a {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.fb-line a::after {
+    content: "";
+    width: 5px;
+    height: 10px;
+    background: url(https://nnn.ed.jp/assets/img/icon_arrow01_right_black01.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 40%;
+    right: -50px;
+}
+.fb-line:hover {
+    opacity: 0.6;
+}
+.fb-line a:hover {
+    text-decoration: none;
+}
+.fb-line img {
+    margin-right: 20px;
+    width: 30px;
+    height: auto;
+}
+
+.fb-tell {
+    width: 260px;
+    height: 50px;
+    padding-top: 10px;
+    position: relative;
+}
+
+.fb-tell img {
+    width: 100%;
+}
+.fb-tell img:hover {
+    opacity: 0.6;
+}
+.subp-white {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 30px;
+}
+.fb-contact {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    width: 40%;
+    height: 40px;
+}
+.fb-contact a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    position: relative;
+}
+.fb-contact a::after {
+    content: "";
+    width: 5px;
+    height: 10px;
+    background: url(https://nnn.ed.jp/assets/img/icon_arrow01_right_white01.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 42%;
+    right: 10px;
+}
+
+/* 背景黒いところの下 */
+.aside-middle2 {
+    width: 1040px;
+    margin: 0 auto;
+    border-bottom: 1px solid gray;
+}
+.am2-flexcontainer {
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.fb-line2 {
+    width: 47%;
+    height: 40px;
+    border: 1px solid black;
+    margin: 50px 0;
+}
+.fb-line2 a {
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.fb-line2 a:hover {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+}
+.fb-line2 a::after {
+    content: "";
+    width: 5px;
+    height: 10px;
+    background: url(https://nnn.ed.jp/assets/img/icon_arrow01_right_black01.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 40%;
+    right: 10px;
+}
+.fb-line2 a:hover::after {
+    content: "";
+    width: 5px;
+    height: 10px;
+    background: url(https://nnn.ed.jp/assets/img/icon_arrow01_right_white01.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 40%;
+    right: 10px;
+}
+
+/* フッター背景グレーのすぐ上 */
+.provide-p {
+    color: black;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+.ab-flexcontainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-bottom: 50px;
+}
+.ab-flexbox {
+    width: 47%;
+    height: 100px;
+    display: flex;
+    background: url(https://nnn.ed.jp/assets/img/bg_diagonal01_black01.png);
+    padding: 8px;
+}
+.ab-flexbox a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    background: white;
+    position: relative;
+}
+.ab-flexbox a:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+.ab-flexbox a::after {
+    content: "";
+    width: 5px;
+    height: 10px;
+    background: url(https://nnn.ed.jp/assets/img/icon_arrow01_right_black01.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 45%;
+    right: 10px;
+}
+.ab-flexbox img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* フッター背景グレーのところ */
+.footernavi-container {
+    align-items: center;
+    padding: 30px 0 40px 0;
+}
+
+.footernavi-wrapper li {
+    border-right: 1px solid gray;
+    padding: 2px 15px;
+    display: flex;
+    align-items: center;
+}
+.footernavi-wrapper li:last-child {
+    border-right: none;
+}
+
+.footernavi-wrapper a {
+    display: flex;
+    align-items: center;
+    color: #231f77;
+    font-weight: bold;
+}
+.pagetop-img {
+    margin-right: 30px;
+}
+
+
+.footer-middle {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.footer-box {
+    width: 18%;
+}
+.footer-box li {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer-box p a {
+    display: inline-block;
+    color: #231F77;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.footer-box ruby {
+    display: table-cell;
+}
+.footer-box rt {
+    margin-top: -3.5em;
+    display: block;
+}
+.half-top {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #D5D5D5;
+    margin-bottom: 20px;
+}
+.dwango {
+    font-size: 12px;
+}
+
+.footer-bottom {
+    align-items: center;
+    margin-top: 50px;
+    border-top: 1px solid #C9C9C9;
+    padding: 15px 0;
+}
+
+.footerbottom-box {
+    width: 230px;
+    font-size: 14px;
+}
+
+.footer-sns a {
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    padding-left: 10px;
+    padding-right: 32px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    font-size: 12px;
+    line-height: 0.8rem;
+}
+.footer-sns a:hover {
+    text-decoration: none;
+    background-color: #DDDDDD;
+}
+.footer-sns a::after {
+    content: ">";
+    color: #C9C9C9;
+    position: absolute;
+    right: 12px;
+    font-size: 15px;
+}
+
+.footer-sns img {
+    height: 30px;
+    width: auto;
+    margin-right: 10px;
+}
+.footer-sns li {
+    border-right: 1px solid #DDDDDD;
+    height: 44px;
+}
+.footer-sns li:last-child {
+    border-right: none;
+}
+
+/* フッター背景黒いところ */
+.footer-aside {
+    background: black;
+}
+.fa-flexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.fa-flexbox a, p {
+    color: #999999;
+    font-size: 12px;
+}
