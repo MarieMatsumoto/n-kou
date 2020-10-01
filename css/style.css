@@ -626,7 +626,6 @@ aside {
 }
 
 .basic-p {
-    border: 1px solid black;
     color: white;
     font-weight: bold;
     font-size: 12px;
@@ -637,7 +636,6 @@ aside {
 }
 
 .advanced-p {
-    border: 1px solid black;
     color: white;
     font-weight: bold;
     font-size: 12px;
