@@ -331,11 +331,10 @@ nav a:hover {
 nav div::before {
     content: "";
     position: absolute;
-    top: -22px;
-    left: 10%;
-    margin-left: -15px;
-    border: 15px solid transparent;
-    border-bottom: 20px solid #181936;
+    top: -20px;
+    margin-left: 60px;
+    border: 13px solid transparent;
+    border-bottom: 18px solid #181936;
 }
 .nav-list {
     height: 90px;
@@ -347,7 +346,7 @@ nav div::before {
 .nav-list a {
     color: white;
     display: block;
-    padding: 10px 15px 10px 0;
+    padding: 10px;
     font-size: 14px;
 }
 
@@ -358,7 +357,8 @@ nav div::before {
 
 .nav-list li {
     display: inline;
-    padding-left: 30px;
+    padding-left: 20px;
+    padding-right: 5px;
     background: url("https://nnn.ed.jp/assets/img/icon_backslash01_black01.png") no-repeat left 0 top 10px;
 }
 
