@@ -341,6 +341,7 @@ nav div::before {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
+    justify-content: center;
 }
 
 .nav-list a {
